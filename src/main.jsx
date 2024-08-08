@@ -4,10 +4,14 @@ import "./global.css";
 
 import Home from "./pages/home.jsx";
 import NavigationBar from "./components/navigaion_bar.jsx";
+import TaskProvider from "./context/TaskContext.jsx";
+import Todo from "./components/todo_section.jsx"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <TaskProvider>
     <Home />
     <NavigationBar />
+    </TaskProvider>
   </React.StrictMode>
 );

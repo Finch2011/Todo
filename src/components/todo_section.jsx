@@ -2,11 +2,11 @@ import React from "react";
 import "./todo_section.css";
 import Tasks from "./tasks";
 
-export default function TodoSection() {
+export default function TodoSection({title , subtitle , color}) {
   return (
-    <div className="todo-container" style={{ backgroundColor: "red" }}>
+    <div className="todo-container" style={{ backgroundColor: color }}>
       <h3>
-        عنوان اول <span>| عنوان دوم</span>
+        {title}<span> | {subtitle}</span>
       </h3>
       <Tasks />
     </div>
