@@ -6,8 +6,7 @@ export default function Tasks() {
 
   return (
     <div className="tasks_container">
-      <input type="checkbox" />
-      <label> عنوان تسک </label>
+      <input type="text" />
       <button>
         <img src="/bin.png" alt="delete task" />
       </button>
